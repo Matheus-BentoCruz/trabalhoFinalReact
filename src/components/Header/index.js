@@ -1,21 +1,29 @@
 import React from "react";
 import "./index.css";
+import { Link } from "react-router-dom";
+import Image from "../../image/ApiChuckNorris.png"
 
 
 
-// Construindo um componente em formato de função
-// É chamado de Statelles
 const Header = () => (
     <div className="header">
         <ul id="header1">
-            <li>Logo</li>
-            <li><input type='text' placeholder="pesquisar"/></li>
+            <div className="chuck">
+                <li><img src={Image} alt="foto Da Api do Norris"/></li>
+                <h5>Carros </h5>
+                <h5>do tio Chuck</h5>
+            </div>
+               
+            <li><input type='subimit' placeholder="pesquisar"/>
+            
+            </li>
+
             <li>Carrinho</li>
         </ul>  
         <ul id="header2">
-            <li>Frete Grátis</li>
-            <li>Nacional</li>
-            <li>Importados</li>
+          <Link> <li>Frete Grátis</li> </Link> 
+          <Link>  <li>Nacional</li> </Link>
+          <Link>  <li>Importados</li> </Link>
         </ul>      
     </div>
 );

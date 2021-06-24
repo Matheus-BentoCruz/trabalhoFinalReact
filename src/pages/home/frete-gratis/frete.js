@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import Header from "../../components/Header/";
 
-const Home = () => (
-    <div className="home">
+const Frete = () => (
+    <div className="Frete">
         <Header />
         <h1>Página principal</h1>
         <Link to={`/detalhes`}>
@@ -13,4 +13,4 @@ const Home = () => (
     </div>
 );
 
-export default Home;
+export default Frete;
